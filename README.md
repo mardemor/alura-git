@@ -1,4 +1,3 @@
-# alura-git
 <h1>Curso Alura Git e Github: Controle e compartilhe seu código</h1>
 <p>Projeto criado como parte integrante do curso <b>Git e Github</b> da escola <a href="https://www.alura.com.br/">Alura</a>, ministrado pelo professor Vinicius Dias.</p>
 <p>O curso tem a carga horária de 6 horas e abordou os seguintes tópicos:</p>
