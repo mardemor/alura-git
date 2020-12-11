@@ -1,10 +1,10 @@
-<h3>Procedimentos</h3>
-<li>Baixado e instalado Git https://git-scm.com/downloads</li>
-<li>Aberto Git Bash (prompt de comandos Git)</li>
-<li>Criado novo repositorio no GitHub</li>
-<li>Adicionado repositorio remoto do GitHub: git remote add <nome-repositorio></li>
+Procedimentos
+Baixado e instalado Git https://git-scm.com/downloads
+Aberto Git Bash (prompt de comandos Git)
+Criado novo repositorio no GitHub
+Adicionado repositorio remoto do GitHub: git remote add <nome-repositorio>
 
-<h3>Comandos</h3>
+Comandos
 
 git --version
 Exibe a versão do Git
@@ -157,13 +157,13 @@ Cria uma tag de versão
 
 
 
-<h3>.gitignore</h3>
+.gitignore
 Relacionar todos os arquivos e/ou pastas que o Git deve ignorar
 <arquivo>.<extensão>
 /<pasta>
 
 
-<h3>Referencias</h3>
+Referencias
 
 http://devhints.io/git-log
 Lista de comandos log
