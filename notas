@@ -1,0 +1,173 @@
+<h3>Procedimentos</h3>
+<li>Baixado e instalado Git https://git-scm.com/downloads</li>
+<li>Aberto Git Bash (prompt de comandos Git)</li>
+<li>Criado novo repositorio no GitHub</li>
+<li>Adicionado repositorio remoto do GitHub: git remote add <nome-repositorio></li>
+
+<h3>Comandos</h3>
+
+git --version
+Exibe a versão do Git
+
+ls
+Lista arquivos no diretorio atual
+
+cd
+Acessa diretorio
+
+mkdir
+Criar diretorio
+
+git init
+Define o diretorio atual como repositorio Git
+
+git init
+Define o diretorio para conter somente as alterações dos arquivos e não uma cópia fisica dos arquivos. 
+
+git status
+Exibe informações sobre o repositorio atual
+
+git add <nome-arquivo>
+Faz com que o Git monitore o arquivo. 
+Marca um arquivo modificado para que seja commitado
+
+git add .
+Faz com que o Git monitore todos os arquivos do diretorio
+Marca todos os arquivos modificados para que sejam commitados
+
+git rm --cached <nome-arquivo>
+Faz com que o Git pare de monitorar o arquivo
+
+git commit -m "<mensagem>"
+Efetua as alterações no código
+
+git config --local user.name "<nome>"
+git config --local user.email "<email>"
+Identifica o usuario e autor das alterações no código
+
+git config user.nome
+git config user.email
+Exibe dados do usuario
+
+git log
+Exibe uma lista com as alterações no codigo
+
+git log --oneline
+Exibe lista resumida das alterações no codigo
+
+git log -p
+Exibe lista de alterações + detalhes das alterações
+
+git log -n 2
+Exibe as 2 ultimas alterações
+
+git log --pretty="format:%H"
+Exibe lista contendo apenas o Hash completo
+
+git log --pretty="format:%h"
+Exibe lista contendo apenas o Hash abreviado
+
+git log --pretty="format:%h %s"
+Exibe lista contendo o Hash abreviado e a mensagem
+
+git remote
+Lista os repositorios remotos (no servidor) que o repositorio atual conhece
+
+git remote -v
+Lista os repositorios remotos com seus caminhos
+
+git remote add <nome-repositorio>
+Cria um repositorio remoto (no servidor) e adiciona uma referencia no repositorio atual
+
+git remote rename <nome-antigo> <nome-novo>
+Renomeia um repositorio remoto
+
+git push <repositorio-remoto> master
+Envia os arquivos para o repositorio remoto no branch master
+
+git clone /c/Users/caminho-completo-do-servidor/ <novo-diretorio>
+Clona o diretorio do projeto que esta no servidor
+
+git pull <repositorio-remoto> master
+Copia o projeto do repositorio remoto para o branch master do repositorio atual
+
+git branch
+Exibe os branches do repositorio atual
+
+git branch <nome-branch>
+Cria um novo branch
+
+git checkout <nome-branch>
+Muda para outro branch
+
+git checkout -b <nome-branch>
+Cria um branch e muda para ele
+
+git checkout -- <nome-arquivo>
+Desfaz uma alteração no codigo
+
+git checkout <hash-commit>
+Transporta o head para o estado imediatamente posterior ao commit especificado.
+Qualquer alteração nesse estado não modifica o branch. 
+Para sair use git checkout <branch> ou crie um branch com este estado usando 
+git checkout -b <novo-branch>
+
+git merge <branch-alterado>
+Traz as mudancas no branch alterado para o branch master (comando deve ser executado dentro do branch master)
+O merge junta os trabalhos e gera uma merge commit
+
+git rebase <branch-alterado>
+O rebase aplica os commits de outra branch na branch atual
+
+git reset HEAD <nome-arquivo>
+Faz com que o arquivo seja desmarcado para commit. Ou seja, desfaz o comando git add
+
+git restore <nome-arquivo>
+Descarta as mudanças no arquivo especificado
+
+git revert <codigo-hash-do-commit>
+Desfaz um commit
+
+git stash
+Salva o estado atual do repositorio para trabalho posterior
+
+git stash list
+Exibe os estados salvos para o repositorio atual
+
+git stash apply <id-da-stash>
+Traz para o HEAD uma stash especificada, mas nao a remove
+
+git stash drop <id-da-stash>
+Remove a stash especificada
+
+git stash pop
+Traz para o HEAD e remove da pilha a stash mais recente
+
+git diff
+Exibe o que foi alterado mas ainda não foi adicionado para commit
+
+git diff <hash-inicial>..<hash-final>
+Exibe as alterações que foram feitas em um determinado espaço entre comitts
+
+git tag
+Exibe as tags geradas
+
+git tag -a <versao> -m <descrição>
+Cria uma tag de versão
+
+
+
+<h3>.gitignore</h3>
+Relacionar todos os arquivos e/ou pastas que o Git deve ignorar
+<arquivo>.<extensão>
+/<pasta>
+
+
+<h3>Referencias</h3>
+
+http://devhints.io/git-log
+Lista de comandos log
+
+https://git-school.github.io/visualizing-git/
+Interface visual para estruturas git
+
